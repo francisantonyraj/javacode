@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="./css/first.css" />
 </head>
 
-
 <body>
 
-
     <h1>Java Interview Questions and Answers</h1>
+
     <dl><code>
         <dt>Q #1: Write a Java program to find the smallest number in an array?</dt>
         <dt>&nbsp;&nbsp;&nbsp;Input : int [] num ={9, 3, 4, 2 ,7}</dt>
@@ -39,7 +38,7 @@
         int[] num = {9,3,4,2,7};
         int len = num.length;
         int temp = 0;
-        for (int i = 0; i'<''>'len; i++) {
+        for (int i = 0; i'<'len-1; i++) {
             for (int j = i + 1; j'<'len; j++) {
                 if (num[i] > num[j]) {
                     temp = num[i];
@@ -452,19 +451,20 @@
 </body>
 <script>
 
-    function doLoad(){
+    function doLoad() {
         var textElement = document.getElementById("text");
+        console.log(textElement);
         var text = textElement.innerText;
 
-        var replaceText = text.replace(/'<'/g,'&lt;');
+        var replaceText = text.replace(/'<'/g, '&lt;');
         replaceText = replaceText
-        .replace(/\bint\b/g,'<span class="keywords-text">int</span>')
-        .replace(/\bString\b/g,'<span class="keywords-text">String</span>')
-        ;
-        textElement.innerHTML=replaceText;
+            .replace(/\bint\b/g, '<span class="keywords-text">int</span>')
+            .replace(/\bString\b/g, '<span class="keywords-text">String</span>')
+            ;
+        textElement.innerHTML = replaceText;
     }
 
-    window.onload=doLoad;
+    window.onload = doLoad;
 </script>
 
 </html>
