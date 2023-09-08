@@ -18,9 +18,10 @@
             <pre id="text">A: class SmallestNumberInAnArray {
     public static void main(String[] args) {
         int [] num = {9,3,4,2,7};
+        int len = num.length;
         int tem = num[0];
-        for(int i=0;i'<'num.length;i++){
-            if(num[i]'<'tem){
+        for(int i=0; i &lt; len; i++){
+            if(num[i] &lt; tem){
                 tem=num[i];
             }
         }
@@ -38,8 +39,8 @@
         int[] num = {9,3,4,2,7};
         int len = num.length;
         int temp = 0;
-        for (int i = 0; i'<'len-1; i++) {
-            for (int j = i + 1; j'<'len; j++) {
+        for (int i = 0; i &lt; len-1; i++) {
+            for (int j = i + 1; j &lt; len; j++) {
                 if (num[i] > num[j]) {
                     temp = num[i];
                     num[i] = num[j];
